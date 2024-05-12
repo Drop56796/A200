@@ -95,6 +95,8 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+    wait(1)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/A200-achievement/main/A200.lua"))()
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
